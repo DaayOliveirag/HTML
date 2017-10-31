@@ -1,0 +1,55 @@
+<div class="contactListSection">
+	<div class="contactHeader">
+		<h2 class="contactHeaderText">Contacts</h2>
+	</div>
+	<div class="favContactHeader">
+		<p>FAVORITE CONTACTS</p>
+	</div>
+	
+	<ul>
+		<li ng-repeat="favoriteArray in favoriteArray | orderBy: 'name'">
+			
+			<div class="d-flex flex-row">
+				<div class="p-2">
+					<img src="img/User Icon Small.png" class="listIcon img-fluid" />
+				</div>
+				<div class="p-2">
+					<img src="img/Favorite_True.png" />
+				</div>
+				<div class="p-2">
+					<h3><a href="#/contacts/{{favoriteArray.id}}">{{favoriteArray.name}}</a></h3>
+					<p class="contactCompany">{{favoriteArray.companyName}}</p>
+					 
+				</div>
+   
+			</div>	
+			<hr />
+		</li>
+	</ul>
+	
+	<div class="favContactHeader">
+		<p>OTHER CONTACTS</p>
+	</div>
+	
+	<ul>
+		<li ng-repeat="NotfavoriteArray in NotfavoriteArray | orderBy: 'name'">
+			
+			<div class="d-flex flex-row">
+				<div class="p-2">
+					<img src="img/User Icon Small.png" class="listIcon img-fluid" />
+				</div>
+				<div class="p-2">
+					<span>&nbsp;</span>
+				</div>
+				<div class="p-2">
+					<h3><a href="#/contacts/{{NotfavoriteArray.id}}">{{NotfavoriteArray.name}}</a></h3>
+					<p class="contactCompany">{{NotfavoriteArray.companyName}}</p>
+
+					 
+				</div>
+   
+			</div>	
+			<hr />
+		</li>
+	</ul>
+</div>

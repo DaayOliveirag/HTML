@@ -1,0 +1,62 @@
+<div class="contactListSection">
+	<div class="d-flex flex-row contactHeader">
+		<div class="p-2"><img src="img/arrow.png" /></div>
+		<div class="p-2"><p><a href="#/contacts" class="contactsLink">Contacts </a></p></div>
+	</div>
+	
+	<div>
+		<img class="img-fluid" src="img/User Large.png" />
+		<h2>{{contactDetails[ind].name}}</h2>
+		<p class="contactCompany">{{contactDetails[ind].companyName}}</p>
+	</div>
+	
+	<div class="d-flex flex-row">
+		<div class="p-2">
+			<p>PHONE: </p>
+			<p>{{contactDetails[ind].phone.home}}</p>
+		</div>
+		<div class="p-2 align-items-end">
+			<p>Home</p>
+		</div>
+	</div>
+	
+	<div class="d-flex flex-row">
+		<div class="p-2">
+			<p>PHONE: </p>
+			<p>{{contactDetails[ind].phone.mobile}}</p>
+		</div>
+		<div class="p-2 align-items-end">
+			<p>Mobile</p>
+		</div>
+	</div>
+	
+	<div class="d-flex flex-row">
+		<div class="p-2">
+			<p>PHONE: </p>
+			<p>{{contactDetails[ind].phone.work}}</p>
+		</div>
+		<div class="p-2 align-items-end">
+			<p>Work</p>
+		</div>
+	</div>
+	
+	<div>
+		<p>ADDRESS: </p>
+		<p>{{contactDetails[ind].address.street}}</p>
+		<p>
+			{{contactDetails[ind].address.city}}, 
+			{{contactDetails[ind].address.state}} {{contactDetails[ind].adress.zipCode}}, 
+			{{contactDetails[ind].address.country}}
+		</p>
+	</div>
+	
+	<div>
+		<p>BIRTHDATE: </p>
+		<p>{{contactDetails[ind].birthdate}}</p>
+	</div>
+ 
+	<div>
+		<p>EMAIL: </p>
+		<p>{{contactDetails[ind].emailAddress}}</p>
+	</div>
+</div>
